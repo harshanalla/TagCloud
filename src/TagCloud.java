@@ -166,7 +166,8 @@ public final class TagCloud {
         }
         return result;
     }
-
+    //edit-1
+    
     /**
      *
      * @param map
@@ -219,7 +220,7 @@ public final class TagCloud {
 
         } else {
             int count = map.get(word) + 1;
-            map.replace(word, map.get(word), count);
+            ((Object) map).replace(word, map.get(word), count);
             if (count > maxFreq) {
                 maxFreq = count;
             }
